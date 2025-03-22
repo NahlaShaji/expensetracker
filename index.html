@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="budget-section">
+      <h3>Set Monthly Budget</h3>
+      <input type="number" id="budget-input" placeholder="Enter budget" />
+      <button id="set-budget-btn">Set Budget</button>
+      <h4>Budget: <span id="budget-amount">$0.00</span></h4>
+      <h4 id="warning-message" style="color: red; display: none">
+        ⚠️ Budget exceeded!
+      </h4>
+    </div>
+    <div class="expense-tracker">
+      <h2>Expense Tracker</h2>
+
+      <!-- Expense Selection -->
+      <div id="expense-selection">
+        <select id="expense-category">
+          <option value="">Select Expense</option>
+          <option value="Food">🍔 Food</option>
+          <option value="Rent">🏠 Rent</option>
+          <option value="Travel">✈️ Travel</option>
+          <option value="Entertainment">🎬 Entertainment</option>
+          <option value="Miscellaneous">🛍️ Miscellaneous</option>
+          <option value="Other">➕ Other</option>
+        </select>
+        <input
+          type="text"
+          id="custom-expense"
+          placeholder="Enter expense name"
+        />
+      </div>
+
+      <input type="number" id="amount" placeholder="Amount" />
+      <button id="add-btn">Add Expense</button>
+      <button id="update-btn" style="display: none">Update Expense</button>
+
+      <h3>Expenses</h3>
+      <ul id="expense-list"></ul>
+
+      <h3>Total: <span id="total">$0.00</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

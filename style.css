@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.expense-tracker {
+  width: 320px;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Styling for inputs and buttons */
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background: purple;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkviolet;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #444;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.delete-btn {
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit-btn {
+  background: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit-btn:hover {
+  background: darkorange;
+}
+
+#custom-expense {
+  display: none;
+}
